@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Kodrella.com Nodejs Chat Örneği</title>
+    <meta name="author" content="Mehmet Alp - mehmetalp.com.tr">
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+    <script src="pako.js"></script>
+    <script type="text/javascript">
+        var socket
+        $(document).ready(function() {
+
+            socket = io.connect("http://localhost:3000"); // 3000 portuna connect olduk
+            socket.on("SentMessage", function(data) { //Server.js deki socket.emitten mesaj'ı client'imize socket.on(mesajgitti) ile aldık.
+                //$("#yazismalar").append("<li>" + data.uid + " diyor ki :" + data.mesaj + "</li>"); // aldığımız datayı(mesaj ve nicki) append ile #yazismalar divinin içerisine li olarak ekledik.
+                var img = document.getElementById("cross");
+                //console.log(getImageFromGzipFromBase64(data));
+                img.src = "data:image/jpeg;base64," + (data);
+            });
+
+        });
+
+
+
+        function move(event) {
+            pos_x = event.offsetX ? (event.offsetX) : event.pageX - document.getElementById("cross").offsetLeft;
+            pos_y = event.offsetY ? (event.offsetY) : event.pageY - document.getElementById("cross").offsetTop;
+            var sendingData = pos_x + "," + pos_y;
+            //console.log(pos_x + "+" + pos_y);
+            socket.emit('mouseChange', sendingData)
+
+        }
+
+        function down(event) {
+            pos_x = event.offsetX ? (event.offsetX) : event.pageX - document.getElementById("cross").offsetLeft;
+            pos_y = event.offsetY ? (event.offsetY) : event.pageY - document.getElementById("cross").offsetTop;
+            var sendingData = pos_x + "," + pos_y;
+            //console.log(pos_x + "+" + pos_y);
+            socket.emit('mouseDown', sendingData)
+
+        }
+
+        function up(event) {
+            pos_x = event.offsetX ? (event.offsetX) : event.pageX - document.getElementById("cross").offsetLeft;
+            pos_y = event.offsetY ? (event.offsetY) : event.pageY - document.getElementById("cross").offsetTop;
+            var sendingData = pos_x + "," + pos_y;
+            //console.log(pos_x + "+" + pos_y);
+            socket.emit('mouseUp', sendingData)
+
+        }
+
+        function keyPress(event) {
+            socket.emit('keyPress', event.keyCode)
+        }
+
+        document.onkeydown = keyPress
+    </script>
+</head>
+
+<body>
+    <form name="pointform" method="post">
+        <img src="point.gif" onmousemove="move(event)" onmousedown="down(event)" onmouseUp="up(event)" id="cross" style="position:relative;z-index:2;">
+    </form>
+</body>
+
+</html>

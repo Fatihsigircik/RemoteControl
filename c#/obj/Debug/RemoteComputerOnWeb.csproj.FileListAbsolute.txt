@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\team\c#\bin\Debug\deneme5.exe.config
+C:\Users\user\Desktop\team\c#\bin\Debug\deneme5.exe
+C:\Users\user\Desktop\team\c#\bin\Debug\deneme5.pdb
+C:\Users\user\Desktop\team\c#\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\team\c#\obj\Debug\deneme5.exe
+C:\Users\user\Desktop\team\c#\obj\Debug\deneme5.pdb
+C:\Users\user\Desktop\team\c#\obj\Debug\RemoteComputerOnWeb.csprojResolveAssemblyReference.cache
+C:\team\c#\bin\Debug\deneme5.exe.config
+C:\team\c#\obj\Debug\deneme5.exe
+C:\team\c#\obj\Debug\deneme5.pdb
+C:\team\c#\obj\Debug\RemoteComputerOnWeb.csprojResolveAssemblyReference.cache
+C:\team\c#\bin\Debug\deneme5.exe
+C:\team\c#\bin\Debug\deneme5.pdb
+C:\team\c#\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\team\c#\bin\Debug\deneme5.exe.config
+C:\Users\user\Documents\Visual Studio 2013\Projects\team\c#\obj\Debug\deneme5.exe
+C:\Users\user\Documents\Visual Studio 2013\Projects\team\c#\obj\Debug\deneme5.pdb

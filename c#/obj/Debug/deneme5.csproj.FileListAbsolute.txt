@@ -1,0 +1,11 @@
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\deneme5.exe.config
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\deneme5.exe
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\deneme5.pdb
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\EngineIoClientDotNet.dll
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\SocketIoClientDotNet.dll
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\WebSocket4Net.dll
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\obj\Debug\deneme5.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\obj\Debug\deneme5.exe
+C:\Users\user\documents\visual studio 2013\Projects\deneme\deneme5\obj\Debug\deneme5.pdb
